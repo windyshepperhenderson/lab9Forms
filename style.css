@@ -1,0 +1,34 @@
+table {
+  font-family: monospace;
+}
+
+tr:nth-child(odd) {
+  background-color: antiquewhite;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+th {
+  background-color: navy;
+  color: white;
+  padding: 16px;
+}
+
+td {
+  padding: 8px;
+}
+
+fieldset {
+  margin-top: 1rem;
+}
+fieldset div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+button {
+  margin-top: 1rem;
+}
