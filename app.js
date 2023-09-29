@@ -128,10 +128,15 @@ form.addEventListener("submit", function (event) {
   const location = event.target.location.value;
   const minCust = event.target.minCust.value;
   const maxCust = event.target.maxCust.value;
-  const avgCookiesPerCust = event.target.avgCookiesPerHour.value;
-  const customersPerHour = event.target.customersPerHour;
-  const mcookiesPerHour = event.target.cookiesPerHour.value;
-  const totalCookieSold = event.target.totalCookieSold.value;
+  const avgCookiesPerCust = event.target.avgCookiesPerCust.value;
+  const newCity = new CookieStore(
+    location,
+    minCust,
+    maxCust,
+    avgCookiesPerCust
+  );
+  console.log(newCity);
+  newCity.render();
 
   // using DOM manipulation to add the response to the page (just so we can see it)
   const subs = document.getElementById("subs");
